@@ -1,1 +1,1 @@
-Prueba escritura.
+Tal cual lo que dice Zulema, se va a sobreescribir lo que hay en el fichero.
