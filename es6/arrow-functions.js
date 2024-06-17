@@ -38,3 +38,5 @@ console.log(pasarMinusculas_v2("YO FUNCIONO?"));
 // Va a recibir un número, lo multiplica por dos y luego lo retorna
 const multiplicaPorDos = n => n * 2;
 console.log(multiplicaPorDos(100));
+
+
