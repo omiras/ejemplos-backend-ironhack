@@ -14,3 +14,39 @@ const precios = [100, 200, 300, 400];
 console.log("precios con iva: ", precios.map(function (elem) {
     return elem * 0.21 + elem;
 }));
+
+console.log("Array enterior: ", precios);
+
+const personas = [
+    {
+        nombre: "Juan",
+        edad: 25,
+        ciudad: "Madrid"
+    },
+    {
+        nombre: "María",
+        edad: 30,
+        ciudad: "Barcelona"
+    },
+    {
+        nombre: "Pedro",
+        edad: 28,
+        ciudad: "Valencia"
+    },
+    {
+        nombre: "Ana",
+        edad: 22,
+        ciudad: "Sevilla"
+    }
+];
+
+/**
+ * Utiliza el método map para crear el siguiente string. La edad de jubilicación en España es 67. 
+ * 
+ * "Ana es de Sevilla y le quedan 45 años para jubilarse" 
+ * 
+ */
+
+console.log("jubilados a la espera: ", personas.map(elem => {
+    return `${elem.nombre} es de ${elem.ciudad} y le quedan ${67 - elem.edad} para jubiliarse  `;
+}));
