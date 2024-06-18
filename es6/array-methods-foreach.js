@@ -1,14 +1,11 @@
 // recorrer un array
 const numbers = [45, 4, 1];
-
 // método forEach recorre un array
-
 // 1. Le pasamos por parámetro una función (NO la ejecutamos)
 numbers.forEach(showNumber)
 
 // showNumber(45);
 // showNumber(4);
-
 // Esta función la va a ejecutar 5 veces, tantas veces como elementos hay en el array
 // En el parámetro elem tenemos cada uno de los elementos del array que pasamos por parámetro a la función
 function showNumber(elem) {

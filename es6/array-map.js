@@ -2,7 +2,6 @@
  * El método map sirve para TRANSFORMAR cada elemento del array en otro elemento diferente (mapear un elemento en otro)
  */
 const names = ["Zulema", "Andrii", "Esteban", "Connor", "Eva", "Ricardo"];
-
 // Convierte cada string de este array en mayúsculas
 // tu función de callback debe DEVOLVER un valor nuevo en el que quieres transformar ese elemento del array
 console.log("mayúsculas", names.map(n => n.toUpperCase()));
@@ -50,3 +49,26 @@ const personas = [
 console.log("jubilados a la espera: ", personas.map(elem => {
     return `${elem.nombre} es de ${elem.ciudad} y le quedan ${67 - elem.edad} para jubiliarse  `;
 }));
+
+/**movimientos bancarios */
+const movimientos = [100, -200, 100, -400];
+
+/** utiliza .map para indicar si se ha efectuado un "ingreso" o una "retirada" ["ingreso", "retirada", "ingreso", "retirada"] */
+const categorizarMovimientos = movimientos.map(m => {
+    if (m > 0) {
+        return "ingreso";
+    }
+    return "retirada";
+
+
+});
+
+console.log("🚀 ~ file: array-map.js:65 ~ categorizarMovimientos ~ categorizarMovimientos:", categorizarMovimientos);
+
+/** Busca la raiz cuadrada de todos estos números 
+ * [4, 16, 64]
+ * 
+*/
+const numerosRaices = [4, 16, 64];
+console.log("Raíces cuadradas: ", numerosRaices.map(n => Math.sqrt(n)));
+console.log("Raíces cuadradas_2: ", numerosRaices.map(Math.sqrt));
