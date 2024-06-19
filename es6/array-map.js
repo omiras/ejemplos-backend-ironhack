@@ -72,3 +72,47 @@ console.log("🚀 ~ file: array-map.js:65 ~ categorizarMovimientos ~ categorizar
 const numerosRaices = [4, 16, 64];
 console.log("Raíces cuadradas: ", numerosRaices.map(n => Math.sqrt(n)));
 console.log("Raíces cuadradas_2: ", numerosRaices.map(Math.sqrt));
+
+// ejemplo de uso del operador de spread en un map
+const pasteles = [
+    {
+        nombre: "Pastel de Chocolate",
+        ingredientes: ["Harina", "Azúcar", "Cacao", "Huevos", "Leche", "Mantequilla"],
+        tamaño: "Grande",
+        vegano: false
+    },
+    {
+        nombre: "Pastel de Vainilla",
+        ingredientes: ["Harina", "Azúcar", "Huevos", "Leche", "Mantequilla", "Vainilla"],
+        tamaño: "Mediano",
+        vegano: false
+    },
+    {
+        nombre: "Pastel de Zanahoria",
+        ingredientes: ["Harina", "Azúcar Morena", "Zanahorias", "Huevos", "Aceite", "Nueces", "Canela"],
+        tamaño: "Pequeño",
+        vegano: false
+    },
+    {
+        nombre: "Pastel Vegano de Chocolate",
+        ingredientes: ["Harina de Almendra", "Azúcar de Coco", "Cacao", "Leche de Almendra", "Aceite de Coco", "Chía"],
+        tamaño: "Mediano",
+        vegano: true
+    },
+    {
+        nombre: "Pastel de Limón",
+        ingredientes: ["Harina", "Azúcar", "Huevos", "Leche", "Mantequilla", "Limón"],
+        tamaño: "Grande",
+        vegano: false
+    }
+];
+// Queremos calcular el precio de cada pastel. Nos dicen que el precio de cada pastel es 1 euro por cada ingrediente utilizado. Entonces, un pastel que tiene 5 ingredientes, cuesta 5 euros. 
+// Utiliza el método map y el operador de spread para crar un nuevo array con los precios actualizados de cada pastel
+const pastelesConPrecios = pasteles.map(p => {
+    return {
+        ...p,
+        precio: p.ingredientes.length
+    }
+})
+
+console.log(pastelesConPrecios);
