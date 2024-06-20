@@ -40,3 +40,20 @@ function compareTitles(a, b) {
 nobles.sort(compareTitles);
 
 console.log(nobles);
+
+// Resultado esperado: 
+/**
+ * [
+  { name: 'King Arthur', title: 'Rey' },
+  { name: 'Prince Encantado', title: 'Príncipe' },
+  { name: 'Prince Richard', title: 'Príncipe' },
+  { name: 'Lord Edward', title: 'Duque' },
+  { name: 'Loraine Hudson', title: 'Duque' },
+  { name: 'Duke William', title: 'Duque' },
+  { name: 'Countess Eleanor', title: 'Marqués' },
+  { name: 'Lady Mary', title: 'Conde' },
+  { name: 'Viscount Henry', title: 'Vizconde' },
+  { name: 'Sir Charles', title: 'Barón' },
+  { name: 'Sir Caballero Oscuro', title: 'Barón' }
+]
+ */
