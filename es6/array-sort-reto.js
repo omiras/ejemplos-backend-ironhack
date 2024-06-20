@@ -28,6 +28,8 @@ const titleOrder = [
 
 // https://hips.hearstapps.com/hmg-prod/images/los-bridgerton-netflix-1611144480.jpg
 
+// Nobleza en europa: https://wiki.medieval-europe.eu/index.php?title=Noble_Titles
+
 
 
 function compareTitles(a, b) {
