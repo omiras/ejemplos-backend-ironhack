@@ -28,7 +28,6 @@ const titleOrder = [
 
 // https://hips.hearstapps.com/hmg-prod/images/los-bridgerton-netflix-1611144480.jpg
 
-// https://pbs.twimg.com/media/EwQo2Y-XIAAZs2c?format=jpg&name=900x900
 
 
 function compareTitles(a, b) {
