@@ -2,6 +2,7 @@ function concatenateStrings(s1, s2) {
     console.log(typeof s2);
     if (!(typeof s1 == 'string') || !(typeof s2 == 'string')) {
         // el uso de 'throw' termina inmediatamente la ejecución de la función
+        
         throw new Error("Both arguments must be strings.")
     }
 
