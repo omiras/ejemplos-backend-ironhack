@@ -2,14 +2,18 @@
 
 
 class Pokemon {
+    // constructor: método especial que se invoca cuando usamos la palabra reservada new
     constructor(id, nombre, tipo, fuerza) {
+        // this-> sirve para hacer referencia al objeto que se está invocando o creando
+        // this.foo -> crea una nueva propiedad para el objeto de nombre 'foo' 
         this.id = id;
         this.nombre = nombre;
         this.tipo = tipo;
         this.fuerza = fuerza;
+        // otra propiedad que se llama puntosVida que SIEMPRE se inicializa a 100
         this.puntosVida = 100;
     }
-
+    // método 
     reforzar() {
         this.fuerza = this.fuerza * 2;
     }
@@ -22,6 +26,7 @@ class Pokemon {
     }
 }
 
+// Crear una instancia de la clase Pokemon
 let pikachu = new Pokemon(666, "Pikachu", ["eléctrico", "tierra"], 50);
 
 let bulbasaur = new Pokemon(1, "Bulbasur", ["agua", "planta"], 45);
