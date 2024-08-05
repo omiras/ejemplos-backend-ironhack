@@ -13,6 +13,21 @@ class Animal {
     emitSound() {
         return "Generic sound";
     }
+
+    // Comparar la esperanza de vida de dos Animal.
+    // Si animal1 tiene más esperanza de vida: devolver un 1
+    // Si animal2 tiene más esperanza de vida: devolver un -1
+    // Si ambos animales tienen la misma esperanza de vida: dovolver un 0
+    static compareLifeExpectancy(animal1, animal2) {
+        if (animal1.lifeExpectancy > animal2.lifeExpectancy) {
+            return 1;
+        }
+        if (animal1.lifeExpectancy < animal2.lifeExpectancy) {
+            return -1
+        }
+
+        return 0;
+    }
 }
 
 // Definir tres subclases
@@ -58,3 +73,11 @@ console.log(loki);
 const hitler = new Human('Hitler', true);
 hitler.setDead();
 console.log(hitler);
+
+// Usar el método estático para comparar dos animales
+const compare_1 = Animal.compareLifeExpectancy(alejandro, loki);
+console.log("Alejandor sanz y loki" , compare_1); // 1
+
+// Comparar a Alejandro sanz y a Hitler
+const compare_2 = Animal.compareLifeExpectancy(alejandro, hitler);
+console.log("Alejandor sanz y Hitler" , compare_2); // 0
