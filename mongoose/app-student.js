@@ -51,12 +51,12 @@ async function main() {
 
     // Ya disponemos de la clase 'User' para poder crear nuevos estudiantes para nuestra base de datos
     const matias = new User({
-        name: "Pepe",
+        name: "pepe",
         lastName: "Muller",
         birthDate: new Date('1990-10-10'),
         contact: {
             phone: "666777888",
-            email: "trolemail"
+            email: "muller@gmail.com"
         },
         finishedCourses: ["HTML 101"]
     });
