@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-main().catch(err => console.log(err));
+main().catch(err => console.log("HA OCURRIDO UN ERROR Y LO ESTAMOS CAPTURANDO", err.message));
 
 async function main() {
     await mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/ironhackDB');
@@ -59,10 +59,7 @@ async function main() {
     });
 
     // Guardamos el usuario en la base de datos
-    try {
-        await matias.save();
-    } catch (err) {
-        console.log("Ha ocurrido un error al guardar el documento", err);
-    }
+    await matias.save();
+
     console.log('Usuario guardado correctamente');
 }
