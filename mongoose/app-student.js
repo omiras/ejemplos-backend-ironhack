@@ -1,6 +1,9 @@
 const mongoose = require('mongoose');
 
-main().catch(err => console.log("HA OCURRIDO UN ERROR Y LO ESTAMOS CAPTURANDO", err.message));
+main().catch(err => {
+    console.error('SI CAPTURAMOS EL ERROR.');
+    console.error(err.message);
+});
 
 async function main() {
     await mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/ironhackDB');
