@@ -58,7 +58,7 @@ async function main() {
     await Gollum.save()
 
     const GollumTwo = new Character({
-        name: "Gollum",
+        name: "Gollum Two",
         attackPower: 21,
         intelligence: 3,
         lifeForce: 5,
