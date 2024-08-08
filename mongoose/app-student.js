@@ -6,6 +6,7 @@ main().catch(err => {
 });
 
 async function main() {
+
     await mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/ironhackDB');
 
     // 1. Crear el Schema
@@ -56,13 +57,17 @@ async function main() {
         birthDate: new Date('1990-10-10'),
         contact: {
             phone: "666777888",
-            email: "muller@gmail.com"
+            email: "mulcom"
         },
         finishedCourses: ["HTML 101"]
     });
 
     // Guardamos el usuario en la base de datos
-    await matias.save();
+    const documentCreated = await matias.save();
+
+    // Consultar todos los datos del usuario que se acaba de crear
+    console.log(documentCreated);
+
 
     console.log('Usuario guardado correctamente');
 }
