@@ -67,6 +67,7 @@ async function main() {
 
     // Consultar todos los datos del usuario que se acaba de crear
     console.log(documentCreated);
+    // res.status(201).send(documentCerated);
 
 
     console.log('Usuario guardado correctamente');
