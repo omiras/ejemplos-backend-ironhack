@@ -57,16 +57,17 @@ async function main() {
         birthDate: new Date('1990-10-10'),
         contact: {
             phone: "666777888",
-            email: "mulcom"
+            email: "pepe@gmail.com"
         },
         finishedCourses: ["HTML 101"]
     });
-
+    console.log("Instancia de la clase USer matias: ", matias);
     // Guardamos el usuario en la base de datos
     const documentCreated = await matias.save();
 
     // Consultar todos los datos del usuario que se acaba de crear
-    console.log(documentCreated);
+
+    console.log("documento bbdd: ", documentCreated);
     // res.status(201).send(documentCerated);
 
 
