@@ -1,21 +1,12 @@
 const mongoose = require("mongoose")
 mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/tecnocasa');
-const Owner = new mongoose.Schema({
-    name: String
-})
 
-const houseSchema = new mongoose.Schema({
-    street: String,
-    city: String,
-    state: String,
-    zip: String,
-    owner: Owner
-})
 
 oneToMany();
 
 async function oneToMany() {
     const mongoose = require("mongoose")
+
 
     const ownerSchema = new mongoose.Schema({
         name: String
@@ -46,10 +37,22 @@ async function oneToMany() {
     })
 
     // query for all houses, use populate to include owner info
-    House.find({}).populate("owner")
+    console.log(await House.findOne().populate("owner"));
 }
 
 function oneToOne() {
+    const Owner = new mongoose.Schema({
+        name: String,
+        // un propietario realmente va a tener muchos mas campos. DNI, fecha nacimineto, deudas hacienda, etc.
+    })
+
+    const houseSchema = new mongoose.Schema({
+        street: String,
+        city: String,
+        state: String,
+        zip: String,
+        owner: Owner // subSchema
+    })
 
     const House = mongoose.model("House", houseSchema)
     // Create a new house
@@ -65,8 +68,4 @@ function oneToOne() {
     House.find({}).then(h => {
         console.log(h);
     });
-
-    Owner.find({}).then(h => {
-        console.log(h);
-    })
 }

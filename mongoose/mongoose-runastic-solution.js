@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 
 // CAMBIAD EL MONGODB_URI
+// En realidad antes de hacer ninguna operación (insertar, actualizar, etc) en base datos, deberíamos esperar a que se conectara a MongoDB (Atlas)
 mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/runastic');
 
 // 1. Crear Schema
