@@ -1,10 +1,12 @@
 const mongoose = require("mongoose")
 
-mongoose.connect('mongodb+srv://oscar:oscar@cluster0.c8tq0vp.mongodb.net/tecnocasa');
+// CAMBIAD EL MONGODB_URI
+mongoose.connect('');
 
 main().catch(err => console.log(err));
 
-async function main () {
+async function main() {
+    console.log('Ejecutando mongoose runastic');
     /**
      * Modelad este esquema: App Runastic
      * 
