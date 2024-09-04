@@ -45,7 +45,6 @@ function oneToOne() {
         name: String,
         // un propietario realmente va a tener muchos mas campos. DNI, fecha nacimineto, deudas hacienda, etc.
     })
-
     const houseSchema = new mongoose.Schema({
         street: String,
         city: String,
