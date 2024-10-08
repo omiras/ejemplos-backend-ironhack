@@ -1,6 +1,7 @@
 const { cogerTurno, siguienteComprador } = require('./colaPescaderia');
 
-it('Tenemos un array con dos personas esperando y llega una nueva', () => {
+// it es un alias de la función 'test', se pueden usar ambos. 
+it('Should add the new customer at the end of the queue', () => {
     const personas = ["Vanya", "Zulema"];
 
     cogerTurno(personas, "Esteban");
