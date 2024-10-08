@@ -11,9 +11,9 @@ function findMinimum(numbers) {
     // recorrer el array
 
     // comprobar cada elemento a ver si el siguiente es menor que el menor que tengo hasta el momento
-    for (let i = 0; i < numbers.length - 1; i++) {
-        if (numbers[i] < currentMin) {
-            currentMin = numbers[i];
+    for (currentNumber of numbers) {
+        if (currentNumber  < currentMin) {
+            currentMin = currentNumber;
         }
     }
 

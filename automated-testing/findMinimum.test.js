@@ -24,4 +24,11 @@ test('El mínimo se encuentra en el primer elemento del array', () => {
     expect(min).toBe(-4);
 });
 
-// Quiero que me escribais un test para comprobar si el mínimo se encuentra al final del array . 19.04 -> Corregir
+// Quiero que me escribais un test para comprobar si el mínimo se encuentra al final del array [3, 2, 1]. 19.05 -> Corregir
+test('El mínimo se encuentra al final del array', () => {
+    const numbers = [3, 2, 1];
+
+    const min = findMinimum(numbers);
+
+    expect(min).toBe(1);
+});
