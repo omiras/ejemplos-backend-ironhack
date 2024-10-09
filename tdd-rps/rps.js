@@ -5,6 +5,12 @@ function rps(player1, player2) {
         return "Draw!";
     }
 
+    if ((player1 == "rock" && player2 == "scissors") || (player1 == "paper" && player2 == "rock")) {
+        return "Player 1 won!"
+    }
+
+
+
 }
 
 module.exports = {

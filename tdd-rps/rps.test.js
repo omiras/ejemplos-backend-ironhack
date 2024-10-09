@@ -38,3 +38,31 @@ it('should return "Draw!" if both players choose scissors', () => {
     expect(result).toBe("Draw!");
 });
 
+// Verificar que piedra gana a tijeras
+it('should return "Player 1 won!" if player 1 chooses rock and player 2 scissors', () => {
+    // Arrange
+    const player1 = "rock";
+    const player2 = "scissors";
+
+    // Act
+    const result = rps(player1, player2);
+
+    // Assert
+    expect(result).toBe("Player 1 won!");
+})
+
+// Verificar que papel gana a piedra
+it('should return "Player 1 won!" if player 1 chooses paper and player 2 chooses rock', ()=> {
+     // Arrange
+     const player1 = "paper";
+     const player2 = "rock";
+ 
+     // Act
+     const result = rps(player1, player2);
+ 
+     // Assert
+     expect(result).toBe("Player 1 won!");
+})
+
+
+
