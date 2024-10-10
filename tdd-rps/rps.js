@@ -9,8 +9,7 @@ function rps(player1, player2) {
         return "Player 1 won!"
     }
 
-
-
+    return "Player 2 won!"
 }
 
 module.exports = {

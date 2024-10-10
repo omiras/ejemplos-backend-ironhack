@@ -77,4 +77,29 @@ it('should return "Player 1 won!" if player 1 chooses scissors and player 2 choo
       expect(result).toBe("Player 1 won!");
 })
 
+// verificar que las tijeras pierden contra la roca (gana el jugador 2)
+it('should return "Player 2 wins!" if player 1 chooses scissors and player 2 chooses rock', ()=> {
+    // Arrange
+    const player1 = "scissors";
+    const player2 = "rock";
+
+    // Act
+    const result = rps(player1, player2);
+
+    // Assert
+    expect(result).toBe("Player 2 won!");
+})
+
+// verificar que las tijeras pierden contra la roca (gana el jugador 2)
+it('should return "Player 2 wins!" if player 1 chooses paper and player 2 chooses scissors', ()=> {
+    // Arrange
+    const player1 = "paper";
+    const player2 = "scissors";
+
+    // Act
+    const result = rps(player1, player2);
+
+    // Assert
+    expect(result).toBe("Player 2 won!");
+})
 
