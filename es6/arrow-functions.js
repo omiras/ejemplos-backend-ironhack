@@ -1,3 +1,10 @@
+
+soyNormal();
+
+function soyNormal() {
+    console.log("SOY NORMAL");
+}
+
 /** Guardar una referencia a una función en una variable */
 const saludo = function () {
     return "Hola";
@@ -13,6 +20,9 @@ const saludoFlecha = () => {
 
 // Ejecutar la función
 console.log(saludoFlecha());
+
+
+
 
 // si tu función solo tiene una línea, puedes omitir las llaves
 // esta función tiene un 'return' implícito 
