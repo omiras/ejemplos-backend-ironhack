@@ -1,8 +1,7 @@
-// https://www.codewars.com/kata/5b16490986b6d336c900007d
 
 /**
  * Task
-You are given a dictionary/hash/object containing some languages and your test results in the given languages. Return the list of languages where your test score is at least 60, in descending order of the scores.
+You are given a arrat of objetos containing some languages and your test results in the given languages. Return the list of languages where your test score is at least 60, in descending order of the scores.
 
 Note: the scores will always be unique (so no duplicate values)
  */
@@ -10,11 +9,24 @@ function myLanguages(results) {
 
 }
 
-console.log(myLanguages({ "Java": 10, "Ruby": 80, "Python": 65 }));
+// Llamadas a la función con un array de objetos
+console.log(myLanguages([
+    { language: "Java", score: 10 },
+    { language: "Ruby", score: 80 },
+    { language: "Python", score: 65 }
+]));
 // Resultado esperado: ["Ruby", "Python"]
 
-console.log(myLanguages({ "Hindi": 60, "Greek": 71, "Dutch": 93 }));
+console.log(myLanguages([
+    { language: "Hindi", score: 60 },
+    { language: "Greek", score: 71 },
+    { language: "Dutch", score: 93 }
+]));
 // Resultado esperado: ["Dutch", "Greek", "Hindi"]
 
-console.log(myLanguages({ "C++": 50, "ASM": 10, "Haskell": 20 }));
+console.log(myLanguages([
+    { language: "C++", score: 50 },
+    { language: "ASM", score: 10 },
+    { language: "Haskell", score: 20 }
+]));
 // Resultado esperado: []
