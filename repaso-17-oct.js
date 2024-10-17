@@ -6,7 +6,11 @@ You are given a array of objetos containing some languages and your test results
 Note: the scores will always be unique (so no duplicate values)
  */
 function myLanguages(results) {
+    // Hay usar 3 metodos de array (hay que combinarlos)
 
+    // 1. Uno para filtrar
+    // 2. Otro para ordenar
+    // 3. Otro para transformar un array de objetos en un array de strings
 }
 
 // Llamadas a la función con un array de objetos
